@@ -9,6 +9,7 @@ import {
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import TicketScreen from '../screens/TicketScreen';
+import TicketDetails from '../screens/TicketDetails';
 import RewardScreen from '../screens/RewardScreen';
 
 const HomeStack = createStackNavigator({
@@ -26,7 +27,8 @@ HomeStack.navigationOptions = {
 };
 
 const TicketStack = createStackNavigator({
-	Links: TicketScreen
+	Ticket: TicketScreen,
+	Details: TicketDetails
 });
 
 TicketStack.navigationOptions = {
@@ -40,7 +42,7 @@ TicketStack.navigationOptions = {
 };
 
 const RewardStack = createStackNavigator({
-	Settings: RewardScreen
+	Reward: RewardScreen
 });
 
 RewardStack.navigationOptions = {

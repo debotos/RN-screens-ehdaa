@@ -10,28 +10,28 @@ export default class TicketScreen extends React.Component {
 		const demoData = [
 			{
 				id: 1,
-				title: 'Name of business',
+				title: 'Name of business 1',
 				status: 'active',
 				info: 'Some sort of details',
 				image: require('../assets/images/robot-prod.png') // will be image url
 			},
 			{
 				id: 2,
-				title: 'Name of business',
+				title: 'Name of business 2',
 				status: 'active',
 				info: 'Some sort of details',
 				image: require('../assets/images/robot-prod.png')
 			},
 			{
 				id: 3,
-				title: 'Name of business',
+				title: 'Name of business 3',
 				status: 'active',
 				info: 'Some sort of details',
 				image: require('../assets/images/robot-prod.png')
 			},
 			{
 				id: 4,
-				title: 'Name of business',
+				title: 'Name of business 4',
 				status: 'active',
 				info: 'Some sort of details',
 				image: require('../assets/images/robot-prod.png')
@@ -39,7 +39,11 @@ export default class TicketScreen extends React.Component {
 		];
 
 		return demoData.map((singleCard, index) => (
-			<BusinessCard key={index} data={singleCard} />
+			<BusinessCard
+				key={index}
+				data={singleCard}
+				navigation={this.props.navigation}
+			/>
 		));
 	};
 

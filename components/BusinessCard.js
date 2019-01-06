@@ -9,7 +9,16 @@ export default class CardShowcaseExample extends Component {
 			<Card style={{ flex: 0 }}>
 				<CardItem>
 					<Body>
-						<Text style={{ fontSize: 20, fontWeight: '500' }}>{title}</Text>
+						<Text
+							style={{ fontSize: 20, fontWeight: '500' }}
+							onPress={() =>
+								this.props.navigation.navigate('Details', {
+									data: this.props.data
+								})
+							}
+						>
+							{title}
+						</Text>
 					</Body>
 				</CardItem>
 				<CardItem>

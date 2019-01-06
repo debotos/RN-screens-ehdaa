@@ -3,6 +3,10 @@ import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
 
+import Login from './screens/Login';
+import SignUp from './screens/SignUp';
+import AccountInformation from './screens/AccountInformation';
+
 export default class App extends React.Component {
 	state = {
 		isLoadingComplete: false
@@ -35,6 +39,9 @@ export default class App extends React.Component {
 					)}
 
 					<AppNavigator />
+					{/* <Login /> */}
+					{/* <SignUp /> */}
+					{/* <AccountInformation /> */}
 				</View>
 			);
 		}
