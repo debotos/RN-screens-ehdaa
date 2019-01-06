@@ -1,8 +1,8 @@
 import React from 'react';
-import { ScrollView, Text, View, StyleSheet } from 'react-native';
+import { Container, Content } from 'native-base';
+import { StyleSheet } from 'react-native';
 
 import SearchBar from '../components/SearchBar';
-
 export default class RewardScreen extends React.Component {
 	static navigationOptions = {
 		header: null,
@@ -11,12 +11,10 @@ export default class RewardScreen extends React.Component {
 
 	render() {
 		return (
-			<View style={styles.container}>
+			<Container>
 				<SearchBar />
-				<ScrollView contentContainerStyle={styles.contentContainer}>
-					<Text>RewardScreen</Text>
-				</ScrollView>
-			</View>
+				<Content style={styles.contentContainer}>{/* Some Content */}</Content>
+			</Container>
 		);
 	}
 }
