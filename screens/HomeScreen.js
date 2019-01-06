@@ -8,9 +8,8 @@ import {
 	TouchableOpacity,
 	View
 } from 'react-native';
-import { WebBrowser } from 'expo';
 
-import { MonoText } from '../components/StyledText';
+import SearchBar from '../components/SearchBar';
 
 export default class HomeScreen extends React.Component {
 	static navigationOptions = {
@@ -20,10 +19,8 @@ export default class HomeScreen extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<ScrollView
-					style={styles.container}
-					contentContainerStyle={styles.contentContainer}
-				>
+				<SearchBar />
+				<ScrollView contentContainerStyle={styles.contentContainer}>
 					<Text>HomeScreen View</Text>
 				</ScrollView>
 			</View>
@@ -34,7 +31,6 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		paddingTop: 10,
 		backgroundColor: '#fff'
 	},
 

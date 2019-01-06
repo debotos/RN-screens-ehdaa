@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollView, Text, View, StyleSheet } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
+
+import SearchBar from '../components/SearchBar';
 
 export default class TicketScreen extends React.Component {
 	static navigationOptions = {
@@ -11,11 +12,9 @@ export default class TicketScreen extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<ScrollView
-					style={styles.container}
-					contentContainerStyle={styles.contentContainer}
-				>
-					<Text>Tic</Text>
+				<SearchBar />
+				<ScrollView contentContainerStyle={styles.contentContainer}>
+					<Text>TicketScreen</Text>
 				</ScrollView>
 			</View>
 		);
@@ -25,7 +24,7 @@ export default class TicketScreen extends React.Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		paddingTop: 10,
+		paddingTop: 19,
 		backgroundColor: '#fff'
 	},
 
