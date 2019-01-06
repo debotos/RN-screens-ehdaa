@@ -12,17 +12,15 @@ import {
 export default class SearchBarExample extends Component {
 	render() {
 		return (
-			<Container>
-				<Header searchBar rounded>
-					<Item>
-						<Icon name="ios-search" />
-						<Input placeholder="Search" />
-					</Item>
-					<Button transparent>
-						<Text>Search</Text>
-					</Button>
-				</Header>
-			</Container>
+			<Header searchBar rounded>
+				<Item>
+					<Icon name="ios-search" />
+					<Input placeholder="Filter..." />
+				</Item>
+				<Button transparent>
+					<Text>Search</Text>
+				</Button>
+			</Header>
 		);
 	}
 }

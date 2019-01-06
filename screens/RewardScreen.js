@@ -23,10 +23,7 @@ export default class RewardScreen extends React.Component {
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 1,
-		paddingTop: 19,
 		backgroundColor: '#fff'
 	},
-
-	contentContainer: {}
+	contentContainer: { paddingRight: 12, paddingLeft: 12, paddingTop: 8 }
 });
